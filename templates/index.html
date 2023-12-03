@@ -1,0 +1,457 @@
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <title>Alat Cek Kanker</title>
+  </head>
+  <body>
+    <div class="container contact-form">
+      <form method="post" action="/">
+        <h3>Memprediksi Status Kanker Anda</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="GENDER">Gender</label>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="GENDER"
+                  id="gender1"
+                  value="1"
+                  required
+                />
+                <label class="form-check-label" for="gender1"> Male </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="GENDER"
+                  id="gender2"
+                  value="0"
+                  required
+                />
+                <label class="form-check-label" for="gender2"> Female </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="AGE">Age</label>
+              <input
+                type="number"
+                name="AGE"
+                class="form-control"
+                placeholder="AGE"
+                min="0"
+                max="77"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="SMOKING">Are You Smoking</label>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="SMOKING"
+                  id="SMOKING1"
+                  value="1"
+                  required
+                />
+                <label class="form-check-label" for="SMOKING1"> No </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="SMOKING"
+                  id="SMOKING2"
+                  value="2"
+                  required
+                />
+                <label class="form-check-label" for="SMOKING2"> Yes </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="YELLOW_FINGERS">Are You YELLOW_FINGERS</label>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="YELLOW_FINGERS"
+                  id="YELLOW_FINGERS1"
+                  value="1"
+                  required
+                />
+                <label class="form-check-label" for="YELLOW_FINGERS1">
+                  No
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="YELLOW_FINGERS"
+                  id="YELLOW_FINGERS2"
+                  value="2"
+                  required
+                />
+                <label class="form-check-label" for="YELLOW_FINGERS2">
+                  Yes
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="ANXIETY">Are You ANXIETY</label>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="ANXIETY"
+                  id="ANXIETY1"
+                  value="1"
+                  required
+                />
+                <label class="form-check-label" for="ANXIETY1"> No </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="ANXIETY"
+                  id="ANXIETY2"
+                  value="2"
+                  required
+                />
+                <label class="form-check-label" for="ANXIETY2"> Yes </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="PEER_PRESSURE">Are You PEER_PRESSURE</label>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="PEER_PRESSURE"
+                  id="PEER_PRESSURE1"
+                  value="1"
+                  required
+                />
+                <label class="form-check-label" for="PEER_PRESSURE1">
+                  No
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="PEER_PRESSURE"
+                  id="PEER_PRESSURE2"
+                  value="2"
+                  required
+                />
+                <label class="form-check-label" for="PEER_PRESSURE2">
+                  Yes
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="CHRONIC_DISEASE">Are You CHRONIC_DISEASE</label>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="CHRONIC_DISEASE"
+                  id="CHRONIC_DISEASE1"
+                  value="1"
+                  required
+                />
+                <label class="form-check-label" for="PEER_PRESSURE1">
+                  No
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="CHRONIC_DISEASE"
+                  id="CHRONIC_DISEASE2"
+                  value="2"
+                  required
+                />
+                <label class="form-check-label" for="CHRONIC_DISEASE2">
+                  Yes
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="FATIGUE">Are You FATIGUE</label>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="FATIGUE"
+                  id="FATIGUE1"
+                  value="1"
+                  required
+                />
+                <label class="form-check-label" for="FATIGUE1"> No </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="FATIGUE"
+                  id="FATIGUE2"
+                  value="2"
+                  required
+                />
+                <label class="form-check-label" for="FATIGUE2"> Yes </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="ALLERGY">Are You ALLERGY</label>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="ALLERGY"
+                  id="ALLERGY1"
+                  value="1"
+                  required
+                />
+                <label class="form-check-label" for="ALLERGY1"> No </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="ALLERGY"
+                  id="ALLERGY2"
+                  value="2"
+                  required
+                />
+                <label class="form-check-label" for="ALLERGY2"> Yes </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="WHEEZING">Are You WHEEZING</label>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="WHEEZING"
+                  id="WHEEZING1"
+                  value="1"
+                  required
+                />
+                <label class="form-check-label" for="WHEEZING1"> No </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="WHEEZING"
+                  id="WHEEZING2"
+                  value="2"
+                  required
+                />
+                <label class="form-check-label" for="WHEEZING2"> Yes </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="ALCOHOL_CONSUMING">Are You ALCOHOL_CONSUMING</label>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="ALCOHOL_CONSUMING"
+                  id="ALCOHOL_CONSUMING1"
+                  value="1"
+                  required
+                />
+                <label class="form-check-label" for="ALCOHOL_CONSUMING1">
+                  No
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="ALCOHOL_CONSUMING"
+                  id="ALCOHOL_CONSUMING2"
+                  value="2"
+                  required
+                />
+                <label class="form-check-label" for="ALCOHOL_CONSUMING2">
+                  Yes
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="COUGHING">Are You COUGHING</label>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="COUGHING"
+                  id="COUGHING1"
+                  value="1"
+                  required
+                />
+                <label class="form-check-label" for="COUGHING1"> No </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="COUGHING"
+                  id="COUGHING2"
+                  value="2"
+                  required
+                />
+                <label class="form-check-label" for="COUGHING2"> Yes </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="SHORTNESS_OF_BREATH"
+                >Are You SHORTNESS_OF_BREATH</label
+              >
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="SHORTNESS_OF_BREATH"
+                  id="SHORTNESS_OF_BREATH1"
+                  value="1"
+                  required
+                />
+                <label class="form-check-label" for="SHORTNESS_OF_BREATH1">
+                  No
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="SHORTNESS_OF_BREATH"
+                  id="SHORTNESS_OF_BREATH2"
+                  value="2"
+                  required
+                />
+                <label class="form-check-label" for="SHORTNESS_OF_BREATH2">
+                  Yes
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="SWALLOWING_DIFFICULTY"
+                >Are You SWALLOWING_DIFFICULTY</label
+              >
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="SWALLOWING_DIFFICULTY"
+                  id="SWALLOWING_DIFFICULTY1"
+                  value="1"
+                  required
+                />
+                <label class="form-check-label" for="SWALLOWING_DIFFICULTY1">
+                  No
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="SWALLOWING_DIFFICULTY"
+                  id="SWALLOWING_DIFFICULTY2"
+                  value="2"
+                  required
+                />
+                <label class="form-check-label" for="SWALLOWING_DIFFICULTY2">
+                  Yes
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="CHEST_PAIN">Are You CHEST_PAIN</label>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="CHEST_PAIN"
+                  id="CHEST_PAIN1"
+                  value="1"
+                  required
+                />
+                <label class="form-check-label" for="CHEST_PAIN1"> No </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="CHEST_PAIN"
+                  id="CHEST_PAIN2"
+                  value="2"
+                  required
+                />
+                <label class="form-check-label" for="CHEST_PAIN2"> Yes </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <input
+                type="submit"
+                name="submit"
+                class="btn submit"
+                value="Predict"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6" id="predictionResult">
+            {% if prediction %}
+            <p>Prediction Result:</p>
+            <p><b>{{ prediction }}</b></p>
+            {% endif %}
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      // Check if the page is loaded for the first time
+      if (performance.navigation.type == 1) {
+        // Reset prediction result on page load
+        $(document).ready(function () {
+          $("#predictionResult").empty();
+        });
+      }
+    </script>
+  </body>
+</html>
